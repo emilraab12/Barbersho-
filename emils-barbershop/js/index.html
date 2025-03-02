@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emils Barbershop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emils Barbershop</h1>
+    </header>
+    <main>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="service">Dienstleistung:</label>
+            <select id="service" name="service" required>
+                <option value="Kinderschnitt">Kinderschnitt - 15 €</option>
+                <option value="Herren Schnitt">Herren Schnitt - 30 €</option>
+                <option value="Bart">Bart - 20 €</option>
+                <option value="Styling">Styling - 10 €</option>
+            </select>
+
+            <button type="submit">Termin buchen</button>
+        </form>
+        <div id="confirmation"></div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
